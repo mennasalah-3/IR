@@ -19,7 +19,7 @@ inquery = input("Please enter your query: ")
 query = tokenization(inquery)
 
 for i in range(1, 11):
-    with open('c:/Users/mohamed sayed/Desktop/IR project\\Doc%d.txt' % i, 'r', encoding="utf-8") as doc:
+    with open('doc1.txt' % i, 'r', encoding="utf-8") as doc:
         read_string = doc.read()
         tokens=tokenization(read_string)
         positionalindex=positionalIndex(tokens)
