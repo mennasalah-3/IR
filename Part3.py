@@ -20,7 +20,6 @@ def IDF (documents):
     for key , value in IDFDict.items():
         IDFDict[key] = math.log10(no_of_documents/value)
     return IDFDict
-IDF1 =IDF([numofwordsofdoc1 , numofwordsofdoc2])
 
 def TF_IDF (TFDict , IDFDict):
     TF_IDFDict = {}
