@@ -37,11 +37,21 @@ def Normalize (TF_IDFDict):
     for key in TF_IDFDict:
         NormalizeDict[key] = TF_IDFDict[key]/Length
     return NormalizeDict
+def Similarity (NormalizeQuery , NormalizeDoc):
+    similarity = NormalizeQuery + NormalizeDoc
+    return similarity
 
 #TFQuery = TF(QueryDict , QueryList)
+#TFQueryDoc = TF(QueryDocDict , QueryDocList)
 
 #IDFQuery = IDF(QueryDict)
+#IDFQueryDoc = IDF(QueryDocDict)
 
 #TF_IDFQuery = TF_IDF(TFQuery , IDFQuery)
+#TF_IDFQueryDoc = TF_IDF(TFQueryDoc , IDFQueryDoc)
 
 #NormalizeQuery = Normalize ( TF_IDFQuery)
+
+#NormalizeQueryDoc = Normalize ( TF_IDFQueryDoc)
+
+#Similarity(NormalizeQuery , NormalizeQueryDoc)
